@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  height: 20rem;
+  position: relative;
+}
+
+.footer__blur {
+  width: 100vh;
+  height: 100%;
+}
+
+.footer__break {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  border: 2px solid white;
+}
+
+.footer__social {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.footer__social > img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+
+.footer__logo > img {
+  width: 10rem;
+}

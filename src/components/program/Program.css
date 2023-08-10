@@ -1,0 +1,68 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+  color: #fff;
+}
+
+.progarm__header {
+  display: flex;
+  justify-content: space-evenly;
+  font-style: italic;
+}
+
+.program__categories {
+  display: flex;
+  gap: 2rem;
+}
+.program__categories > .category {
+  flex: 1 1;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #808080;
+  transition: 0.3s linear ease-in-out;
+}
+
+.program__categories > .category:hover {
+  cursor: pointer;
+  background: var(--planCard);
+  transform: scale(1.1);
+  transition: 0.3s linear ease-in-out;
+}
+
+.program__categories > div svg {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+}
+
+.program__categories > .category > .heading {
+  font-size: 1.3rem;
+}
+
+.program__categories .category .join__now {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.program__categories .category img {
+  width: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .progarm__header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .program__categories {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+}

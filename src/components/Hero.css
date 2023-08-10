@@ -1,0 +1,243 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hero__blur {
+  width: 28rem;
+  height: 32rem;
+  left: 0;
+}
+
+.hero__left {
+  color: #fff;
+  padding: 2rem;
+  padding-top: 1.5rem;
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero__left__bestClub {
+  margin-top: 4rem;
+  background-color: #393d42;
+  border-radius: 4rem;
+  padding: 20px 13px;
+  width: fit-content;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero__left__bestClub > span {
+  z-index: 2;
+}
+
+.hero__left__bestClub > div {
+  position: absolute;
+  left: 10px;
+  width: 5.4rem;
+  height: 80%;
+  border-radius: 3rem;
+  background-color: var(--orange);
+  z-index: 1;
+}
+
+.hero__left__heroHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero__left__heroHeading > h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-overflow: inherit;
+}
+
+.hero__left__getStarted > P {
+  width: 90%;
+}
+
+.hero__left__getStarted {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero__left__getStarted .figures {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__left__getStarted .figures > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__left__getStarted .figures > div > span:nth-of-type(1) {
+  color: white;
+  font-size: 2rem;
+}
+.hero__left__getStarted .figures > div > span:nth-of-type(2) {
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.hero__left__getStarted .heroButtuns {
+  display: flex;
+  gap: 2rem;
+  font-weight: normal;
+}
+
+.hero__right {
+  flex: 0.3;
+  position: relative;
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.hero__right > button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: white;
+}
+
+.hero__right__heart__rat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: #464d53;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  width: fit-content;
+  position: absolute;
+  right: 4rem;
+  top: 6rem;
+}
+
+.hero__right__heart__rat > img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.hero__right__heart__rat > p:nth-of-type(2) {
+  font-size: 1.5rem;
+  color: var(--gray);
+}
+
+.hero__right__hero__images > img:nth-of-type(1) {
+  position: absolute;
+  top: 10rem;
+  right: 12rem;
+  width: 23rem;
+  z-index: 2;
+}
+
+.hero__right__hero__images > img:nth-of-type(2) {
+  position: absolute;
+  right: 24rem;
+  top: 3rem;
+  width: 15rem;
+  z-index: 1;
+}
+
+.hero__right__hero__calories {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #656565;
+  border-radius: 5px;
+  width: fit-content;
+  position: absolute;
+  bottom: 2rem;
+  right: 30rem;
+}
+
+.hero__right__hero__calories > img {
+  width: 3rem;
+}
+.hero__right__hero__calories > div {
+  display: flex;
+  flex-direction: column;
+}
+.hero__right__hero__calories > div > :nth-child(1) {
+  color: var(--gray);
+}
+.hero__right__hero__calories > div > :nth-child(2) {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero__blur {
+    width: 12rem;
+  }
+  .hero__left {
+    gap: 1rem;
+  }
+  .hero__left__bestClub {
+    margin-top: 1rem;
+    align-self: center;
+    transform: scale(0.8);
+  }
+  .hero__left__heroHeading > h1 {
+    gap: 1rem;
+    text-align: center;
+  }
+  .hero__left__getStarted > P {
+    text-align: center;
+  }
+  .heroButtuns {
+    align-self: center;
+    transform: scale(0.8);
+  }
+  .figures {
+    align-items: center;
+    gap: 1rem;
+    transform: scale(0.9);
+  }
+  .hero__right {
+    background: none;
+  }
+  .hero__right__heart__rat {
+    position: relative;
+    left: 2rem;
+    top: 3rem;
+    transform: scale(0.8);
+  }
+  .hero__right__hero__calories {
+    position: relative;
+    bottom: 0;
+    left: 2rem;
+    z-index: 2;
+  }
+  .hero__right__hero__calories img {
+    width: 2rem;
+  }
+  .hero__right__hero__images img:nth-child(1) {
+    position: relative;
+    width: 15rem;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+  }
+  .hero__right__hero__images img:nth-child(2) {
+    left: 3rem;
+    top: 2rem;
+    width: 12rem;
+    z-index: -1;
+  }
+}

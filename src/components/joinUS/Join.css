@@ -1,0 +1,50 @@
+.join {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.join__left {
+  flex: 1;
+}
+
+.join__left > div {
+  border: 2px solid var(--orange);
+  width: 12rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.join__right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.join__right form {
+  display: flex;
+  background-color: var(--caloryCard);
+  padding: 1.5rem;
+  width: fit-content;
+}
+
+.join__right form input {
+  padding: 0.5rem;
+  font: 1.2rem;
+  background-color: var(--caloryCard);
+  border: none;
+  color: #fff;
+  width: 15rem;
+}
+.join__right form button {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .join {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,55 @@
+.plans {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.plans__blur:nth-child(1) {
+  width: 28rem;
+  height: 32rem;
+  left: 5rem;
+}
+
+.plans__blur:nth-child(2) {
+  width: 28rem;
+  height: 32rem;
+  right: 5rem;
+}
+
+.plans__header {
+  display: flex;
+  justify-content: space-evenly;
+  font-style: italic;
+  margin-bottom: 4rem;
+}
+
+.plans__card {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.plans__card > :nth-child(2) {
+  background: var(--planCard);
+  transform: scale(1.1);
+}
+
+.plans__card > :nth-child(2) > svg {
+  fill: white;
+}
+
+.plans__card > :nth-child(2) > button {
+  background-color: white;
+  color: var(--orange);
+}
+
+@media screen and (max-width: 768px) {
+  .plans {
+    margin-top: 0;
+  }
+  .plans__card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .plans__card .plan:nth-child(2) {
+    transform: none;
+  }
+}
